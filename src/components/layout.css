@@ -35,7 +35,6 @@ h1,h2,h3,h4,h5,h6{
     justify-content: center;
     background-position: center;
     background-size: cover;
-    background: linear-gradient(rgba(255, 158, 9, 0.5), rgba(255, 158, 9, 0.5)) !important;
 }
 
 .alternative-background{
