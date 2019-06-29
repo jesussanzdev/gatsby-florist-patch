@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import {Link} from 'gatsby'
-import logo from '../../images/logo.svg'
 import {FaCartArrowDown} from 'react-icons/fa'
 export default class Navbar extends Component {
 
@@ -15,9 +14,14 @@ export default class Navbar extends Component {
             },
             {
                 id: 2,
-                path: '/about',
+                path: '/about/',
                 text: 'about'
             },
+            {
+                id: 3,
+                path: '/faq/',
+                text: 'FAQ'
+            }
         ]
     }
     navbarHandler = () => {
@@ -33,9 +37,6 @@ export default class Navbar extends Component {
     render() {
         return (
             <nav className="navbar navbar-expand-sm bg-light navbar-light">
-                <Link to="/" className="navbar-brand">
-                    <img src={logo} alt="logo"/>
-                </Link>
                 <button className="navbar-toggler" type="button" onClick={this.navbarHandler}>
                     <span className="navbar-toggler-icon" />
                 </button>
@@ -51,7 +52,7 @@ export default class Navbar extends Component {
                                 );
                         })}
                         <li className="nav-item ml-sm-5">
-                            <FaCartArrowDown className="cart-icon"/>
+                            <FaCartArrowDown className="cart-icon snipcart-checkout"/>
                         </li>
                     </ul>
                 </div>

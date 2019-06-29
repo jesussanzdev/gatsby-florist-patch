@@ -3,18 +3,15 @@ import Layout from "../components/layout"
 import { graphql } from "gatsby"
 import SEO from "../components/seo"
 import BackgroundSection from "../components/Globals/BackgroundSection";
-import Info from "../components/Navigation/About-prev";
-import About from "../components/Navigation/About-more";
+import Terms from "../components/Links/terms-info";
 
-
-const AboutPage = ({data}) => (
+const TermsPage = ({data}) => (
   <Layout>
-    <SEO title="about" />
+    <SEO title="terms" />
     <BackgroundSection img={data.img.childImageSharp.fluid} 
-    title="about us" 
+    title="terms of service" 
     styleClass="alternative-background" />
-    <Info/>
-    <About/>
+    <Terms/>
   </Layout>
 )
 
@@ -32,4 +29,4 @@ export const query = graphql`
 `;
 
 
-export default AboutPage
+export default TermsPage

@@ -1,9 +1,10 @@
 :root{
-    --mainBrown: #2d1e1f;
     --mainYellow: rgb(255, 158, 9);
-    --mainGrey: #ece8dc;
     --mainWhite: #fff;
     --mainDark: #222;
+    --mainPink: rgb(250, 241, 246);
+    --mainBlue: rgb(217, 228, 241);
+    --mainGreen: rgb(13, 110, 18);
 }
 
 body {
@@ -17,28 +18,35 @@ h1,h2,h3,h4,h5,h6{
     letter-spacing: 0.25rem !important;
 }
 
-.text-yellow{
-    color: var(--mainYellow);
+.text-green{
+    color: var(--mainGreen);
 }
 
 .cart-icon{
     cursor: pointer;
-    color: var(--mainYellow);
+    color: var(--mainGreen);
     font-size: 2rem;
 }
 
-.default-background, .about-background{
+.default-background{
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     background-position: center;
     background-size: cover;
-    background: linear-gradient(rgba(255, 158, 9, 0.5), rgba(255, 158, 9, 0.5));
+    background: linear-gradient(rgba(255, 158, 9, 0.5), rgba(255, 158, 9, 0.5)) !important;
 }
 
-.about-background{
+.alternative-background{
     min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+    background: linear-gradient(rgba(255, 158, 9, 0.5), rgba(117, 72, 4, 0.5)) !important;
+
 }
 
 .btn-yellow{
@@ -48,9 +56,23 @@ h1,h2,h3,h4,h5,h6{
 
 .btn-yellow:hover{
     background: var(--mainYellow);
-    color: var(--mainBrown);
+    color: var(--mainWhite);
 }
 
-.footer{
-    background: var(--mainBrown);
+.btn-green{
+    color: var(--mainGreen);
+    border-color: var(--mainGreen);
+}
+
+.btn-green:hover{
+    background: var(--mainGreen);
+    color: var(--mainWhite);
+}
+
+.flower{
+    background: var(--mainPink);
+}
+
+.contact{
+    background: var(--mainBlue);
 }
