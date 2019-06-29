@@ -14,7 +14,7 @@ export default function Product({product}) {
                     data-item-name={product.title}
                     data-item-price={product.price}
                     data-item-image={product.image.fluid.src}
-                    data-item-url="gatsby-flower-patch.netlify.com"
+                    data-item-url="https://gatsby-flower-patch.netlify.com/"
                     >
                     ADD TO CART
                 </button>
